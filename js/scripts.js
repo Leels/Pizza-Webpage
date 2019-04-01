@@ -1,3 +1,4 @@
+//backend logic
 function Order(size, style, beverages, meats, vegetables) {
   this.size = size;
   this.style = style;
@@ -28,7 +29,7 @@ Order.prototype.calculatePrice = function() {
   for (var i = 0; i < this.meats.length; i++) {
     this.price += 2.5;
   }
-  
+
   for (var i = 0; i < this.vegetables.length; i++) {
     this.price += 1.5;
   }
@@ -37,10 +38,10 @@ Order.prototype.calculatePrice = function() {
 Order.prototype.shortDescription = function() {
   return "A " + this.size + " " + this.style + " pizza: $" + this.price;
 }
-
+//frontend logic
 var displayOrderDetails = function() {
-  $('#order-details').show();
-  $('#order-details h4').text(newOrder.shortDescription());
+  $('#details').show();
+  $('#details h4').text(newOrder.shortDescription());
   $('#meats').text(newOrder.meats.join(", "));
   $('#vegetables').text(newOrder.vegetables.join(", "));
   $('#beverages').text(newOrder.beverages.join(", "));
@@ -72,8 +73,8 @@ $(document).ready(function() {
     console.log();
 
     $(".order").last().click(function() {
-      $('#order-details').show();
-      $('#order-details h4').text(newOrder.shortDescription());
+      $('#details').show();
+      $('#details h4').text(newOrder.shortDescription());
       $('#meats').text(newOrder.meats.join(", "));
       $('#vegetables').text(newOrder.vegetables.join(", "));
       $('#beverages').text(newOrder.beverages.join(", "));

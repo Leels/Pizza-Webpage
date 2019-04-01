@@ -2,6 +2,15 @@
   display: none;
 }
 
-.
-  background-color: : blue;
+
+body {
+  background-color: darkblue;
+  color: white;
+
+}
+
+h4 {
+  color: green;
+  font-weight: bold;
+  font-family: sans-serif;
 }

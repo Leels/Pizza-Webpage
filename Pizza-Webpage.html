@@ -11,10 +11,10 @@
   <div class="container">
     <div class="page-header">
       <h1>Pizza.Net</h1>
-      <h4>We deliver the best pizza in Cyberspace!</h4>
+      <h3>We deliver the best pizza in Cyberspace!</h3>
     </div>
   </div>
-  <!--
+
   <div class="container">
     <h2>Please enter your name, address and phone:</h2>
     <form>
@@ -45,17 +45,17 @@
       <button type="submit" class="btn btn-default">Done</button>
     </form>
   </div>
-</div>-->
+</div>
   <div class="container">
     <div class="row">
       <div class="col-xs-8" id="order-display">
         <form id="order-form">
           <div class="row">
             <div class="col-md-6">
-              <!-- size -->
-          <h4>Order:</h4>
+          <h3>Order:</h3>
+          <!-- size -->
               <div class="form-group">
-                <label>Select a Size:</label>
+                <h4>Select a Size:</h4>
                 <div class="radio">
                   <label><input name="size" type="radio" value="small">Small (12") $7</label>
                 </div>
@@ -71,7 +71,7 @@
               </div>
               <!-- style -->
               <div class="form-group">
-                <label>Select a Style:</label>
+                <h4>Select a Style:</h4>
                 <div class="radio">
                   <label><input name="style" type="radio" value="regular-crust">Regular Crust</label>
                 </div>
@@ -82,9 +82,9 @@
                   <label><input name="style" type="radio" value="deep-dish">Deep Dish (add $3)</label>
                 </div>
               </div>
-              <!-- meats -->
+              <!-- beverages -->
               <div class="form-group">
-                <label>Beverages ($3.00 each):</label>
+                <h4>Beverages ($3.00 each):</h4>
                 <div class="checkbox">
                   <label><input name="beverages" type="checkbox" value="pepsi">Pepsi</label>
                 </div>
@@ -102,11 +102,11 @@
                 </div>
               </div>
             </div>
-            <!-- meat -->
+            <!-- toppings -->
             <div class="col-md-6">
-              <h4>Toppings Menu</h4>
+              <h3>Toppings Menu</h3>
               <div class="form-group">
-                <label>Meats ($2.50 Each):</label>
+                <h4>Meats ($2.50 Each):</h4>
                 <div class="checkbox">
                   <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
                 </div>
@@ -120,9 +120,8 @@
                   <label><input name="meats" type="checkbox" value="anchovies">Anchovies</label>
                 </div>
               </div>
-              <!-- vegetables -->
               <div class="form-group">
-                <label>Vegetables ($1.50 Each):</label>
+                <h4>Vegetables ($1.50 Each):</h4>
                 <div class="checkbox">
                   <label><input name="vegetables" type="checkbox" value="mushrooms">Mushrooms</label>
                 </div>
@@ -150,12 +149,12 @@
           <button class="btn btn-default" type="submit">Calculate Price</button>
         </form>
       </div>
-      <!-- detail display -->
+      <!-- order total display -->
       <div class="col-xs-4">
         <h3>Your Order:</h3>
         <ul id="order-list">
         </ul>
-        <div id="order-details">
+        <div id="details">
           <h4></h4>
           <p>Meats: <span id="meats"></span></p>
           <p>Vegetables: <span id="vegetables"></span></p>
