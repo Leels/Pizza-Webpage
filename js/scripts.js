@@ -36,16 +36,10 @@ Order.prototype.calculatePrice = function() {
 }
 
 Order.prototype.shortDescription = function() {
-  return "A " + this.size + " " + this.style + " pizza: $" + this.price;
+  return "A " + this.size + " " + this.style + " pizza including toppings and beverages: $" + this.price;
 }
 //frontend logic
-var displayOrderDetails = function() {
-  $('#details').show();
-  $('#details h4').text(newOrder.shortDescription());
-  $('#meats').text(newOrder.meats.join(", "));
-  $('#vegetables').text(newOrder.vegetables.join(", "));
-  $('#beverages').text(newOrder.beverages.join(", "));
-}
+
 
 $(document).ready(function() {
   $('#order-form').submit(function(event) {
@@ -72,13 +66,7 @@ $(document).ready(function() {
 
     console.log();
 
-    $(".order").last().click(function() {
-      $('#details').show();
-      $('#details h4').text(newOrder.shortDescription());
-      $('#meats').text(newOrder.meats.join(", "));
-      $('#vegetables').text(newOrder.vegetables.join(", "));
-      $('#beverages').text(newOrder.beverages.join(", "));
-    });
+    
   });
 
 

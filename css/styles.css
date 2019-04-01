@@ -2,15 +2,24 @@
   display: none;
 }
 
+.dark-font {
+  color: darkorange;
+}
+
+.jumbotron {
+  color: darkorange;
+  text-align: center;
+}
 
 body {
   background-color: darkblue;
   color: white;
+  font-family: monospace;
 
 }
 
 h4 {
   color: green;
   font-weight: bold;
-  font-family: sans-serif;
+
 }
