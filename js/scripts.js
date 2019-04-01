@@ -36,7 +36,7 @@ Order.prototype.calculatePrice = function() {
 }
 
 Order.prototype.shortDescription = function() {
-  return "A " + this.size + " " + this.style + " pizza including toppings and beverages: $" + this.price;
+  return "A " + this.size + " " + this.style + " pizza including toppings and beverages: $" + ((this.price).toFixed(2));
 }
 //frontend logic
 
@@ -48,14 +48,14 @@ $(document).ready(function() {
     var size = $('input[name=size]:checked').val();
     var style = $('input[name=style]:checked').val();
     var beverages = $('input:checkbox[name=beverages]:checked').map(function() {
-        return this.value;
-      }).get();
+      return this.value;
+    }).get();
     var meats = $('input:checkbox[name=meats]:checked').map(function() {
-        return this.value;
-      }).get();
+      return this.value;
+    }).get();
     var vegetables = $('input:checkbox[name=vegetables]:checked').map(function() {
-        return this.value;
-      }).get();
+      return this.value;
+    }).get();
     var newOrder = new Order(size, style, beverages, meats, vegetables);
 
     newOrder.calculatePrice();
@@ -64,9 +64,8 @@ $(document).ready(function() {
 
     document.getElementById("order-form").reset();
 
-    console.log();
 
-    
+
   });
 
 

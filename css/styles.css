@@ -7,8 +7,9 @@
 }
 
 .jumbotron {
-  color: darkorange;
+
   text-align: center;
+  background-color: darkorange;
 }
 
 body {
@@ -21,5 +22,11 @@ body {
 h4 {
   color: green;
   font-weight: bold;
+
+}
+
+img {
+  width: 110%;
+  height: auto;
 
 }
