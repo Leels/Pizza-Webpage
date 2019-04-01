@@ -15,10 +15,10 @@ Order.prototype.calculatePrice = function() {
   } else if (this.size === 'large') {
     this.price += 3;
   } else if (this.size === 'x-large') {
-    this.price += 5;
+    this.price += 6;
   }
 
-  if (this.crust === "deep-dish") {
+  if (this.style === "Deep Dish") {
     this.price += 3;
   }
 

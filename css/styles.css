@@ -26,7 +26,8 @@ h4 {
 }
 
 img {
-  width: 110%;
+  width: 100%;
   height: auto;
+  float: left;
 
 }
